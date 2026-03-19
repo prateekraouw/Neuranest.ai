@@ -7,6 +7,7 @@ import {
   CloudCog,
   Code2,
   Globe2,
+  GraduationCap,
   Menu,
   Rocket,
   ShieldCheck,
@@ -41,7 +42,7 @@ const services = [
     icon: BrainCircuit,
   },
   {
-    title: "Neuranest Academy",
+    title: "Threshold Academy",
     description:
       "Conducting industry-leading training programs, workshops, and seminars in modern programming and digital tech.",
     icon: GraduationCap,
@@ -58,7 +59,7 @@ const valueProps = [
   {
     title: "End-to-End Solutions",
     description:
-      "From architecture and integration through launch, optimization, and support, Neuranest covers the full delivery lifecycle.",
+      "From architecture and integration through launch, optimization, and support, Threshold AI Solutions covers the full delivery lifecycle.",
     icon: ShieldCheck,
   },
   {
@@ -116,11 +117,19 @@ function App() {
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <a href="#home" className="flex items-center gap-3">
             <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-1.5 shadow-neon">
-              <img src={logo} alt="Neuranest.ai logo" className="h-10 w-10 rounded-xl object-cover" />
+              <img
+                src={logo}
+                alt="Threshold AI Solutions logo"
+                className="h-10 w-10 rounded-xl object-cover"
+              />
             </div>
             <div>
-              <div className="font-display text-lg font-bold tracking-tight text-white">Neuranest.ai</div>
-              <div className="text-xs uppercase tracking-[0.24em] text-slate-400">Intelligent Software Hub</div>
+              <div className="font-display text-base font-bold tracking-tight text-white sm:text-lg">
+                Threshold AI Solutions
+              </div>
+              <div className="text-xs uppercase tracking-[0.24em] text-slate-400">
+                Intelligent Systems Partner
+              </div>
             </div>
           </a>
 
@@ -191,7 +200,7 @@ function App() {
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
                 From custom enterprise applications to cutting-edge AI research and comprehensive IT
-                consultancy, Neuranest is your hub for digital transformation.
+                consultancy, Threshold AI Solutions is your partner for digital transformation.
               </p>
               <p className="mt-6 max-w-2xl text-base leading-7 text-slate-400">
                 Our operating charter spans software engineering, consultancy, SaaS, advanced R&D,
@@ -239,7 +248,7 @@ function App() {
                 <div className="rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(17,27,57,.92),rgba(5,8,22,.92))] p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <div className="text-sm font-medium text-slate-400">Neuranest.ai Matrix</div>
+                      <div className="text-sm font-medium text-slate-400">Threshold Matrix</div>
                       <div className="mt-1 font-display text-2xl font-bold text-white">Digital Transformation Hub</div>
                     </div>
                     <div className="rounded-2xl bg-brand-400/15 p-3 text-brand-400">
@@ -311,7 +320,7 @@ function App() {
           <div className="max-w-2xl">
             <SectionEyebrow>Core Offerings</SectionEyebrow>
             <h2 className="mt-6 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Services designed around the full Neuranest operating model.
+              Services designed around the full Threshold AI Solutions operating model.
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-400">
               The company objectives define five operating pillars that move from software delivery
@@ -341,8 +350,9 @@ function App() {
                 From charter to execution.
               </h2>
               <p className="mt-4 text-base leading-7 text-slate-400">
-                Neuranest.ai exists to design, implement, maintain, and scale digital systems while
-                simultaneously expanding product IP, applied research, and workforce capability.
+                Threshold AI Solutions exists to design, implement, maintain, and scale digital
+                systems while simultaneously expanding product IP, applied research, and workforce
+                capability.
               </p>
               <p className="mt-4 text-base leading-7 text-slate-400">
                 In practice, that means combining custom software development, IT consultancy,
@@ -362,9 +372,9 @@ function App() {
                   Research-backed product thinking with enterprise-grade execution.
                 </h2>
                 <p className="mt-4 text-base leading-7 text-slate-400">
-                  Neuranest combines software engineering, cloud architecture, cybersecurity
-                  awareness, AI experimentation, and market-facing product strategy in a single
-                  operating system.
+                  Threshold AI Solutions combines software engineering, cloud architecture,
+                  cybersecurity awareness, AI experimentation, and market-facing product strategy
+                  in a single operating system.
                 </p>
               </div>
 
@@ -416,7 +426,7 @@ function App() {
                 Ready to build the next generation of software?
               </h2>
               <p className="mt-4 text-base leading-7 text-slate-400">
-                Share your brief and Neuranest can shape the right mix of engineering,
+                Share your brief and Threshold AI Solutions can shape the right mix of engineering,
                 consulting, product, research, or academy support.
               </p>
             </div>
@@ -479,8 +489,8 @@ function App() {
       <footer className="border-t border-white/10 bg-slate-950/90">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <div>
-            <span className="font-semibold text-slate-200">Neuranest.ai</span> © {currentYear}. All
-            rights reserved.
+            <span className="font-semibold text-slate-200">Threshold AI Solutions</span> ©{" "}
+            {currentYear}. All rights reserved.
           </div>
           <div className="flex gap-6">
             <a href="/" className="transition hover:text-brand-400">
