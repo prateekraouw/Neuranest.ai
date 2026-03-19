@@ -1,13 +1,11 @@
 import { useState } from "react";
 import {
   ArrowRight,
-  BookOpen,
   BrainCircuit,
   BriefcaseBusiness,
   CloudCog,
   Code2,
   Globe2,
-  GraduationCap,
   Menu,
   Rocket,
   ShieldCheck,
@@ -40,12 +38,6 @@ const services = [
     description:
       "Pioneering research in artificial intelligence, data analytics, cybersecurity, and cloud computing.",
     icon: BrainCircuit,
-  },
-  {
-    title: "Threshold Academy",
-    description:
-      "Conducting industry-leading training programs, workshops, and seminars in modern programming and digital tech.",
-    icon: GraduationCap,
   },
 ];
 
@@ -203,9 +195,9 @@ function App() {
                 consultancy, Threshold AI Solutions is your partner for digital transformation.
               </p>
               <p className="mt-6 max-w-2xl text-base leading-7 text-slate-400">
-                Our operating charter spans software engineering, consultancy, SaaS, advanced R&D,
-                and education, giving organizations one partner for strategy, delivery, and
-                long-term capability building.
+                Our operating charter spans software engineering, consultancy, SaaS, and advanced
+                R&amp;D, giving organizations one partner for strategy, delivery, and long-term
+                capability building.
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -260,7 +252,7 @@ function App() {
                     {[
                       ["Enterprise Apps", "Global-grade engineering across web, mobile, and cloud."],
                       ["AI Innovation", "Research-led delivery in analytics, cybersecurity, and automation."],
-                      ["Capability Building", "Workshops, training, and advisory for modern technical teams."],
+                      ["Transformation Advisory", "Technology strategy, execution planning, and modernization support."],
                     ].map(([title, copy]) => (
                       <div
                         key={title}
@@ -276,7 +268,7 @@ function App() {
                     {[
                       ["Global", "Markets"],
                       ["AI", "R&D"],
-                      ["Academy", "Programs"],
+                      ["Cloud", "Platforms"],
                     ].map(([top, bottom]) => (
                       <div
                         key={top}
@@ -323,22 +315,15 @@ function App() {
               Services designed around the full Threshold AI Solutions operating model.
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-400">
-              The company objectives define five operating pillars that move from software delivery
-              to innovation and talent development. Each offering below directly reflects that
-              charter.
+              The company objectives define four operating pillars that move from software delivery
+              to product innovation. Each offering below directly reflects that charter.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {services.slice(0, 3).map((service) => (
+          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {services.map((service) => (
               <ServiceCard key={service.title} service={service} />
             ))}
-
-            <div className="grid gap-6 md:col-span-2 md:grid-cols-2 xl:col-span-3 xl:mx-auto xl:w-full xl:max-w-[68%]">
-              {services.slice(3).map((service) => (
-                <ServiceCard key={service.title} service={service} />
-              ))}
-            </div>
           </div>
         </section>
 
@@ -355,9 +340,9 @@ function App() {
                 capability.
               </p>
               <p className="mt-4 text-base leading-7 text-slate-400">
-                In practice, that means combining custom software development, IT consultancy,
-                SaaS and enterprise platforms, AI and emerging-tech R&amp;D, and industry-focused
-                training into one connected operating model for digital transformation.
+                In practice, that means combining custom software development, IT consultancy, SaaS
+                and enterprise platforms, and AI-focused R&amp;D into one connected operating model
+                for digital transformation.
               </p>
             </div>
           </div>
@@ -395,11 +380,6 @@ function App() {
                     copy: "Align systems, teams, and delivery practices around measurable business outcomes.",
                     icon: BriefcaseBusiness,
                   },
-                  {
-                    title: "Academy-Led Upskilling",
-                    copy: "Develop in-house capability through workshops, seminars, and technical curriculum.",
-                    icon: BookOpen,
-                  },
                 ].map((item) => {
                   const Icon = item.icon;
                   return (
@@ -427,7 +407,7 @@ function App() {
               </h2>
               <p className="mt-4 text-base leading-7 text-slate-400">
                 Share your brief and Threshold AI Solutions can shape the right mix of engineering,
-                consulting, product, research, or academy support.
+                consulting, product, and research support.
               </p>
             </div>
 
@@ -461,7 +441,6 @@ function App() {
                   <option>Consulting</option>
                   <option>SaaS</option>
                   <option>R&amp;D</option>
-                  <option>Academy</option>
                 </select>
               </label>
 
