@@ -39,18 +39,18 @@ const services = [
 
 const highlights = [
   {
-    title: "Fast, senior execution",
-    description: "Clear scope. Sharp delivery. No bloated process.",
+    title: "Dependable delivery",
+    description: "Clear planning and disciplined execution from start to finish.",
     icon: Rocket,
   },
   {
-    title: "Built for scale",
-    description: "Strong architecture from day one.",
+    title: "Built for reliability",
+    description: "Strong technical foundations designed for long-term use.",
     icon: ShieldCheck,
   },
   {
-    title: "Global delivery mindset",
-    description: "Designed for ambitious teams and real markets.",
+    title: "Cost-conscious approach",
+    description: "Thoughtful solutions that balance quality, speed, and budget.",
     icon: Globe2,
   },
 ];
@@ -63,16 +63,16 @@ const navItems = [
 
 const focusCards = [
   {
-    title: "Launch faster",
-    copy: "Move from idea to usable product without dragging through months of noise.",
+    title: "Reliable outcomes",
+    copy: "Solutions planned with clarity and delivered with a focus on long-term value.",
   },
   {
-    title: "Look premium",
-    copy: "Interfaces, systems, and delivery that feel credible to buyers and investors.",
+    title: "Professional presentation",
+    copy: "Clean digital experiences that reflect credibility and operational maturity.",
   },
   {
-    title: "Stay adaptable",
-    copy: "Technology choices that support the next phase, not just the first release.",
+    title: "Practical scalability",
+    copy: "Technology decisions that remain efficient today and adaptable tomorrow.",
   },
 ];
 
@@ -150,7 +150,7 @@ function App() {
               href="#contact"
               className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-brand-600"
             >
-              Book a Call
+              Schedule a Consultation
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -183,7 +183,7 @@ function App() {
                 className="inline-flex w-full items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Book a Call
+                Schedule a Consultation
               </a>
             </div>
           </div>
@@ -194,13 +194,13 @@ function App() {
         <section id="home" className="mx-auto max-w-7xl px-6 pb-18 pt-16 lg:px-8 lg:pb-24 lg:pt-24">
           <div className="grid items-center gap-14 lg:grid-cols-[1.12fr_0.88fr]">
             <div className="max-w-3xl">
-              <SectionEyebrow>Built for traction</SectionEyebrow>
+              <SectionEyebrow>Trusted technology partner</SectionEyebrow>
               <h1 className="mt-8 font-display text-5xl font-bold tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
-                AI systems and software that make your business look serious.
+                Trusted AI systems and software for dependable business growth.
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-                We help teams launch better products, modernize delivery, and build technical
-                momentum fast.
+                We help businesses modernize operations, launch digital products, and adopt AI
+                through practical, reliable, and cost-aware delivery.
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -208,7 +208,7 @@ function App() {
                   href="#contact"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-brand-600"
                 >
-                  Start a Project
+                  Schedule a Consultation
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
@@ -245,7 +245,7 @@ function App() {
                   <div>
                     <div className="text-sm font-medium text-slate-500">Threshold Approach</div>
                     <div className="mt-1 font-display text-2xl font-bold text-slate-950">
-                      Clear direction. Fast delivery.
+                      Careful planning. Dependable execution.
                     </div>
                   </div>
                   <div className="rounded-2xl bg-brand-400/12 p-3 text-brand-600">
@@ -295,16 +295,16 @@ function App() {
           <div className="rounded-[36px] border border-[#e8dfd2] bg-[linear-gradient(135deg,#fffdf8_0%,#f3eee5_100%)] p-8 shadow-[0_24px_70px_rgba(15,23,42,0.08)] lg:p-10">
             <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div>
-                <SectionEyebrow>Why clients convert</SectionEyebrow>
+                <SectionEyebrow>Why businesses choose us</SectionEyebrow>
                 <h2 className="mt-6 font-display text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-                  Less noise. More clarity, speed, and trust.
+                  A practical partner for trusted digital delivery.
                 </h2>
               </div>
               <div className="grid gap-4 sm:grid-cols-3">
                 {[
-                  ["Sharp positioning", "We keep the message tight and premium."],
-                  ["Credible delivery", "The site feels like a real operator built it."],
-                  ["Clear next step", "Visitors know what to do in seconds."],
+                  ["Trust-led delivery", "A measured approach built around reliability and clarity."],
+                  ["Practical budgets", "Solutions shaped to be effective and economically sensible."],
+                  ["Clear communication", "Simple, direct engagement from first discussion to launch."],
                 ].map(([title, copy]) => (
                   <div key={title} className="rounded-3xl border border-white bg-white/90 p-5">
                     <div className="text-sm font-semibold text-slate-950">{title}</div>
@@ -320,10 +320,10 @@ function App() {
           <div className="max-w-2xl">
             <SectionEyebrow>Core services</SectionEyebrow>
             <h2 className="mt-6 font-display text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-              Just the capabilities that matter.
+              Focused services for modern business needs.
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-600">
-              Enough breadth to solve real business problems. Tight enough to stay focused.
+              A concise set of capabilities designed to solve real operational and product challenges.
             </p>
           </div>
 
@@ -353,12 +353,12 @@ function App() {
         <section id="contact" className="mx-auto max-w-7xl px-6 pb-24 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[0.88fr_1.12fr]">
             <div className="rounded-[34px] bg-slate-950 p-8 text-white shadow-[0_28px_80px_rgba(15,23,42,0.24)]">
-              <SectionEyebrow>Start here</SectionEyebrow>
+              <SectionEyebrow>Get in touch</SectionEyebrow>
               <h2 className="mt-6 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                Need a sharper product, site, or delivery engine?
+                Looking for a dependable technology partner?
               </h2>
               <p className="mt-4 max-w-md text-base leading-7 text-slate-300">
-                Send a short brief. We will respond with a focused direction and next step.
+                Share a short brief and we will respond with a practical recommendation and next step.
               </p>
             </div>
 
@@ -408,7 +408,7 @@ function App() {
                 type="submit"
                 className="mt-6 inline-flex items-center gap-2 rounded-full bg-slate-950 px-6 py-3.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-brand-600"
               >
-                Send Brief
+                Submit Enquiry
                 <ArrowRight className="h-4 w-4" />
               </button>
             </form>
