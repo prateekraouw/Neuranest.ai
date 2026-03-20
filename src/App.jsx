@@ -57,6 +57,7 @@ const highlights = [
 
 const navItems = [
   { label: "Services", href: "#services" },
+  { label: "Products", href: "./products.html" },
   { label: "Why Us", href: "#why-us" },
   { label: "Contact", href: "#contact" },
 ];
@@ -73,6 +74,40 @@ const focusCards = [
   {
     title: "Practical scalability",
     copy: "Technology decisions that remain efficient today and adaptable tomorrow.",
+  },
+];
+
+const customers = [
+  "J&S Power Solutions",
+  "TATA Solar",
+  "J&S Power Solutions",
+  "TATA Solar",
+];
+
+const comparisonMetrics = [
+  {
+    label: "Development time",
+    withoutLabel: "Conventional",
+    withLabel: "With Threshold",
+    withoutValue: "100%",
+    withValue: "50%",
+    badge: "50% faster",
+  },
+  {
+    label: "Resource demand",
+    withoutLabel: "Conventional",
+    withLabel: "With Threshold",
+    withoutValue: "100%",
+    withValue: "60%",
+    badge: "40% fewer resources",
+  },
+  {
+    label: "Cost burden",
+    withoutLabel: "Higher",
+    withLabel: "Optimized",
+    withoutValue: "100%",
+    withValue: "58%",
+    badge: "Lower total cost",
   },
 ];
 
@@ -192,40 +227,68 @@ function App() {
 
       <main>
         <section id="home" className="mx-auto max-w-7xl px-6 pb-18 pt-16 lg:px-8 lg:pb-24 lg:pt-24">
-          <div className="grid items-center gap-14 lg:grid-cols-[1.12fr_0.88fr]">
-            <div className="max-w-3xl">
-              <SectionEyebrow>Trusted technology partner</SectionEyebrow>
-              <h1 className="mt-8 font-display text-5xl font-bold tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
+          <div className="mx-auto max-w-5xl text-center">
+            <SectionEyebrow>Trusted technology partner</SectionEyebrow>
+            <div className="mt-8 flex justify-center">
+              <h1 className="max-w-4xl font-display text-5xl font-bold tracking-tight text-slate-950 sm:text-6xl lg:text-[5.25rem] lg:leading-[0.95]">
                 Trusted AI systems and software for dependable business growth.
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+            </div>
+            <div className="mt-6 flex justify-center">
+              <p className="max-w-3xl text-lg leading-8 text-slate-600">
                 We help businesses modernize operations, launch digital products, and adopt AI
                 through practical, reliable, and cost-aware delivery.
               </p>
+            </div>
 
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-brand-600"
-                >
-                  Schedule a Consultation
-                  <ArrowRight className="h-4 w-4" />
-                </a>
-                <a
-                  href="#services"
-                  className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 transition duration-300 hover:border-brand-400 hover:text-brand-600"
-                >
-                  See What We Do
-                </a>
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-brand-600"
+              >
+                Schedule a Consultation
+                <ArrowRight className="h-4 w-4" />
+              </a>
+              <a
+                href="#services"
+                className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 transition duration-300 hover:border-brand-400 hover:text-brand-600"
+              >
+                See What We Do
+              </a>
+            </div>
+          </div>
+
+          <div className="relative mx-auto mt-16 max-w-6xl">
+            <div className="absolute left-12 top-0 h-24 w-24 rounded-full bg-brand-400/12 blur-3xl" />
+            <div className="absolute right-12 top-10 h-24 w-24 rounded-full bg-[#d9cdbf] blur-3xl" />
+
+            <div className="relative">
+              <div className="text-center text-sm font-medium uppercase tracking-[0.18em] text-slate-500">
+                Trusted by teams such as
+              </div>
+              <div className="mt-5">
+                <div className="marquee-shell">
+                  <div className="marquee-track">
+                    {[...customers, ...customers].map((customer, index) => (
+                      <div
+                        key={`${customer}-${index}`}
+                        className="inline-flex min-w-max items-center rounded-full border border-slate-200/80 bg-white/55 px-5 py-3 text-sm font-semibold text-slate-700 backdrop-blur-[2px]"
+                      >
+                        {customer}
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
 
-              <div className="mt-12 grid gap-4 sm:grid-cols-3">
+              <div className="mt-10 grid gap-4 sm:grid-cols-3">
                 {highlights.map((item) => {
                   const Icon = item.icon;
+
                   return (
                     <div
                       key={item.title}
-                      className="rounded-3xl border border-white/80 bg-white/88 p-5 shadow-[0_18px_40px_rgba(15,23,42,0.06)] backdrop-blur-sm"
+                      className="rounded-3xl border border-white/80 bg-white/72 p-5 text-left shadow-[0_18px_40px_rgba(15,23,42,0.05)] backdrop-blur-[2px]"
                     >
                       <Icon className="h-6 w-6 text-brand-600" />
                       <div className="mt-4 text-sm font-semibold text-slate-950">{item.title}</div>
@@ -235,57 +298,63 @@ function App() {
                 })}
               </div>
             </div>
+          </div>
+        </section>
 
-            <div className="relative">
-              <div className="absolute -left-8 top-8 h-24 w-24 rounded-full bg-brand-400/12 blur-3xl" />
-              <div className="absolute -right-8 bottom-8 h-24 w-24 rounded-full bg-[#d9cdbf] blur-3xl" />
+        <section className="mx-auto max-w-7xl px-6 pb-8 lg:px-8">
+          <div className="rounded-[36px] border border-[#e8dfd2] bg-[linear-gradient(135deg,#fffdf8_0%,#f3eee5_100%)] p-8 shadow-[0_24px_70px_rgba(15,23,42,0.08)] lg:p-10">
+            <div className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
+              <div>
+                <SectionEyebrow>Operational impact</SectionEyebrow>
+                <h2 className="mt-6 font-display text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+                  Measurable gains in speed, efficiency, and cost control.
+                </h2>
+                <p className="mt-4 text-base leading-7 text-slate-600">
+                  Our delivery model reduces unnecessary effort while improving visibility and
+                  execution quality across the build cycle.
+                </p>
+              </div>
 
-              <div className="relative overflow-hidden rounded-[36px] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,243,235,0.94))] p-7 shadow-[0_30px_90px_rgba(15,23,42,0.12)]">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="text-sm font-medium text-slate-500">Threshold Approach</div>
-                    <div className="mt-1 font-display text-2xl font-bold text-slate-950">
-                      Careful planning. Dependable execution.
-                    </div>
-                  </div>
-                  <div className="rounded-2xl bg-brand-400/12 p-3 text-brand-600">
-                    <BrainCircuit className="h-6 w-6" />
-                  </div>
-                </div>
-
-                <div className="mt-8 grid gap-4">
-                  {[
-                    ["Define", "Sharpen the problem, audience, and product scope."],
-                    ["Build", "Ship polished systems with speed and technical discipline."],
-                    ["Scale", "Create a stronger foundation for growth, sales, and operations."],
-                  ].map(([title, copy]) => (
-                    <div
-                      key={title}
-                      className="rounded-2xl border border-slate-200 bg-white/90 p-4"
-                    >
-                      <div className="text-sm font-semibold text-slate-950">{title}</div>
-                      <p className="mt-1 text-sm leading-6 text-slate-600">{copy}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-8 grid grid-cols-3 gap-3">
-                  {[
-                    ["AI", "Systems"],
-                    ["SaaS", "Products"],
-                    ["Senior", "Advisory"],
-                  ].map(([top, bottom]) => (
-                    <div
-                      key={top}
-                      className="rounded-2xl border border-slate-200 bg-[#fcfaf5] px-4 py-5 text-center"
-                    >
-                      <div className="font-display text-lg font-bold text-brand-600">{top}</div>
-                      <div className="mt-1 text-xs uppercase tracking-[0.2em] text-slate-500">
-                        {bottom}
+              <div className="grid gap-4">
+                {comparisonMetrics.map((metric) => (
+                  <div
+                    key={metric.label}
+                    className="rounded-2xl border border-slate-200 bg-white/90 p-5"
+                  >
+                    <div className="flex items-center justify-between gap-4">
+                      <div className="text-sm font-semibold text-slate-950">{metric.label}</div>
+                      <div className="rounded-full bg-brand-400/12 px-3 py-1 text-xs font-semibold text-brand-600">
+                        {metric.badge}
                       </div>
                     </div>
-                  ))}
-                </div>
+                    <div className="mt-4 space-y-3">
+                      <div>
+                        <div className="mb-1 flex items-center justify-between text-xs font-medium text-slate-500">
+                          <span>{metric.withoutLabel}</span>
+                          <span>Baseline</span>
+                        </div>
+                        <div className="h-2.5 rounded-full bg-slate-200">
+                          <div
+                            className="metric-fill h-full rounded-full bg-slate-900"
+                            style={{ width: metric.withoutValue }}
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <div className="mb-1 flex items-center justify-between text-xs font-medium text-slate-500">
+                          <span>{metric.withLabel}</span>
+                          <span>Optimized</span>
+                        </div>
+                        <div className="h-2.5 rounded-full bg-[#dfeeea]">
+                          <div
+                            className="metric-fill h-full rounded-full bg-gradient-to-r from-brand-400 to-brand-600"
+                            style={{ width: metric.withValue }}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
