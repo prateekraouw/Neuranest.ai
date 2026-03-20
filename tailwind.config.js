@@ -19,7 +19,7 @@ export default {
         pulse: "0 0 40px rgba(124,58,237,.25)",
       },
       backgroundImage: {
-        grid: "linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
+        grid: "linear-gradient(rgba(15,23,42,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(15,23,42,0.05) 1px, transparent 1px)",
       },
       fontFamily: {
         display: ["Space Grotesk", "Segoe UI", "sans-serif"],

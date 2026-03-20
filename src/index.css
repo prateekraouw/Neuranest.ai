@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html {
@@ -15,8 +15,8 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: #050816;
-  color: #f8fafc;
+  background: #f6f3ec;
+  color: #0f172a;
 }
 
 * {
@@ -35,6 +35,6 @@ button {
 }
 
 select option {
-  background: #0f172a;
-  color: #e2e8f0;
+  background: #fffdf8;
+  color: #0f172a;
 }
